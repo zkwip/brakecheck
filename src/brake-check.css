@@ -1,0 +1,59 @@
+html {
+    background-color: #030303;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 4fr auto 1fr;
+}
+
+main {
+    grid-area: 2/2/3/3;
+    padding: 40px;
+    background-color: rgba(7, 7, 7, 0.95);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 5px;
+}
+
+#bg {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1000;
+    background-color: #030303;
+    margin: 0;
+    padding: 0;
+}
+
+main label {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: subgrid;
+    vertical-align: baseline;
+}
+
+main label input,
+main label select {
+    grid-column: 2/4;
+}
+
+main label input.right,
+main label select.right {
+    grid-column: 3/4;
+}
+
+main label input.left,
+main label select.left {
+    grid-column: 2/3;
+}
