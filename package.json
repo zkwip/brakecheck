@@ -10,6 +10,6 @@
   "devDependencies": {
     "postcss": "^8.5.25",
     "typescript": "~5.7.2",
-    "vite": "^8.0.16"
+    "vite": "^8.1.6"
   }
 }
